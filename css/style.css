@@ -1,0 +1,195 @@
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+/* Generics */
+  
+body {
+  font-family: sans-serif;
+  padding-top: 80px;
+}
+
+img{
+  display: block;
+  max-width: 100%;  
+}
+
+h1{
+  font-size: 10px;
+  text-transform:uppercase;
+}
+
+h2{
+  font-size: 8px;
+  font-weight: 300;
+}
+
+/* Utils */
+
+.container {
+  max-width: 900px;
+  margin: 0px auto;
+}
+  
+header {
+  color: white;
+  background-color: #ff6900;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:1;
+  box-shadow: 0 0 5px #666;
+}
+
+
+/* # Navbar */
+
+.navbar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo{
+    display: flex;
+    justify-content: center;
+  }
+
+.navbar-logo img{
+  max-width: 100px;
+  display: block;
+}
+
+.navbar > * {
+  padding: 10px 0;
+  flex-basis: 20%;
+}
+    
+.navbar-menu ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: flex end;
+  align-items: center;
+}
+
+.navbar-menu a{
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+  font-size: 13px;
+}
+
+.navbar-actions ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+  
+.navbar-actions a{
+  color: white;
+  margin: 0 5px;
+}
+
+/* Main */
+
+.row{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.col{
+  min-height: 50px;
+  flex-basis: calc(100% / 3); 
+}
+
+/* card */
+
+.card{
+  position: relative;
+}
+
+.features{
+  color: white;
+  padding: 3px 7px; 
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.features-container{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+
+.bg-red{
+  background-color: red;
+  
+}
+.bg-green{
+  background-color: green;
+}
+
+.favourite{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  padding: 3px 7px; 
+  background-color: white;
+}
+
+.card .favourite:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.product-image-hover {
+    display: none;
+}
+
+.card:hover .product-image {
+    display: none;
+}
+
+.card:hover .product-image-hover {
+    display: block;
+}
+
+/* Data */
+
+.data{
+  margin-top: 5px;
+}
+
+.prize{
+  font-size: 10px;
+}
+
+.normal{
+  color: red;
+}
+
+.discount{
+  text-decoration: line-through;
+}
+
+/* Footer */
+
+footer{
+  color: white;
+  background-color: black;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
